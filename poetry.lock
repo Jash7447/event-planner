@@ -1,0 +1,69 @@
+[[package]]
+name = "asgiref"
+version = "3.5.1"
+description = "ASGI specs, helper code, and adapters"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
+
+[[package]]
+name = "django"
+version = "3.2.13"
+description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+asgiref = ">=3.3.2,<4"
+pytz = "*"
+sqlparse = ">=0.2.2"
+
+[package.extras]
+argon2 = ["argon2-cffi (>=19.1.0)"]
+bcrypt = ["bcrypt"]
+
+[[package]]
+name = "django-tailwind-postcss"
+version = "0.12.0"
+description = "Tailwind CSS Framework for Django projects"
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+django = ">=2.2"
+
+[[package]]
+name = "pytz"
+version = "2022.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "sqlparse"
+version = "0.4.2"
+description = "A non-validating SQL parser."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "f138a21cab98fe767fe18d8cef7ca96aaef65f8e8598043b5de90c0e4b1e170e"
+
+[metadata.files]
+asgiref = []
+django = []
+django-tailwind-postcss = [
+    {file = "django-tailwind-postcss-0.12.0.tar.gz", hash = "sha256:b9449a65d69590aded2d5a6979bb5f86940d3d320f0c2dd5835f1f0118ccc35c"},
+    {file = "django_tailwind_postcss-0.12.0-py3-none-any.whl", hash = "sha256:0fd400d17f98a4de913432e38aaa145686f2f80fdfcec0a6128c29b8460d95b8"},
+]
+pytz = []
+sqlparse = []
