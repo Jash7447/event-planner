@@ -7,7 +7,7 @@ optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
+tests = ["mypy (>=0.800)", "pytest-asyncio", "pytest"]
 
 [[package]]
 name = "django"
@@ -23,8 +23,16 @@ pytz = "*"
 sqlparse = ">=0.2.2"
 
 [package.extras]
-argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
+argon2 = ["argon2-cffi (>=19.1.0)"]
+
+[[package]]
+name = "django-scribbler-django2.0"
+version = "0.9.3"
+description = "django-scribbler is an application for managing snippets of text for a Django website."
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
 name = "django-tailwind-postcss"
@@ -56,14 +64,14 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f138a21cab98fe767fe18d8cef7ca96aaef65f8e8598043b5de90c0e4b1e170e"
+content-hash = "c05bf03dc8cb90f02c208ba335b140707b88fa3347cf5a21b368716ff729f9cf"
 
 [metadata.files]
 asgiref = []
 django = []
-django-tailwind-postcss = [
-    {file = "django-tailwind-postcss-0.12.0.tar.gz", hash = "sha256:b9449a65d69590aded2d5a6979bb5f86940d3d320f0c2dd5835f1f0118ccc35c"},
-    {file = "django_tailwind_postcss-0.12.0-py3-none-any.whl", hash = "sha256:0fd400d17f98a4de913432e38aaa145686f2f80fdfcec0a6128c29b8460d95b8"},
+"django-scribbler-django2.0" = [
+    {file = "django-scribbler-django2.0-0.9.3.tar.gz", hash = "sha256:57caa3daebf486bc70d4cd947a77e10a250aa255b9ca6f7b67f285aee178f37e"},
 ]
+django-tailwind-postcss = []
 pytz = []
 sqlparse = []

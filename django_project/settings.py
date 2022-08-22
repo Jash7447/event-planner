@@ -36,6 +36,7 @@ X_FRAME_OPTIONS = '*'
 # Application definition
 
 INSTALLED_APPS = [
+    'authentication.apps.AuthenticationConfig',
     'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
